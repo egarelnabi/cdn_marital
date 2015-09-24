@@ -28,6 +28,12 @@ shinyUI(fluidPage(
                               "Divorced"
                              ), 
                   selected = "All"), 
+      sliderInput("range",
+                  label = "Time period to display:",
+                  min = 2005,
+                  max = 2014,
+                  value = c(2005, 2014), 
+                  format = "0000"), 
       helpText(p("Use the dropdown to select the marital status you would like to explore."), p("Plot Created on 23 Sep 2015 by Egarelnabi"), p("This plot was created for JHU's Developing Data Products"))
     ),
     
